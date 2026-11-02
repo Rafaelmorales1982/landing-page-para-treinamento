@@ -192,3 +192,71 @@ article .article-link  a{
     min-height: 100vh;
 
 }
+
+
+/* =========================================
+   MEDIA QUERIES - RESPONSIVIDADE PARA CELULAR
+   ========================================= */
+
+/* Para tablets e celulares (telas menores que 768px) */
+@media screen and (max-width: 768px) {
+  
+  /* Ajusta a largura geral da página */
+  .all-content {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 0; /* Remove bordas arredondadas extremas se necessário */
+  }
+
+  /* Transforma o menu em coluna para caber na tela do celular */
+  .hero nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero nav ul li {
+    width: 80%;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  /* Reduz a altura do banner principal (hero) */
+  .hero {
+    height: auto;
+    padding-bottom: 30px;
+    background-position: center center;
+  }
+
+  /* Diminui o tamanho do título principal para mobile */
+  .hero-content h1 {
+    font-size: 32px;
+    padding: 0 10px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    width: 85%;
+    padding: 12px;
+  }
+
+  /* Ajusta o espaçamento do conteúdo principal */
+  main {
+    width: 95%;
+  }
+}
+
+/* Para celulares muito pequenos (telas menores que 480px) */
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero nav ul li {
+    width: 90%;
+  }
+
+  article p {
+    text-indent: 0; /* Remove recuo exagerado em telas muito pequenas */
+  }
+}
